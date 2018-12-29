@@ -77,9 +77,11 @@
     
     // 默认动画是从中间慢慢放大的，这是因为图层默认的锚点是(0.5，0.5)
     toView.layer.anchorPoint = CGPointMake(0.5, 0);
+    transitionContext.containerView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         toView.transform = CGAffineTransformIdentity;
+        transitionContext.containerView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
         
     } completion:^(BOOL finished) {
         // 注意：自定义转场动画，在执行完动画之后一定要告诉系统动画执行完毕了！！
@@ -97,6 +99,7 @@
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         fromView.transform = CGAffineTransformMakeScale(1, 0.0001);
+        transitionContext.containerView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
         
     } completion:^(BOOL finished) {
         // 注意：自定义转场动画，在执行完动画之后一定要告诉系统动画执行完毕了！！

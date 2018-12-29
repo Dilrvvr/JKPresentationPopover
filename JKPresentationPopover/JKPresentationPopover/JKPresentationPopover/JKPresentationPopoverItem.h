@@ -74,4 +74,9 @@
 @property (nonatomic, copy) void (^operationBlock)();
 
 + (instancetype)itemWithTitleText:(NSString *)titleText normalIconImageName:(NSString *)normalIconImageName highlightedIconImageName:(NSString *)highlightedIconImageName operationBlock:(void(^)())operationBlock;
+
+/*
++ (instancetype)itemWithTitle:(NSString *)title
+                   normalIcon:(NSString *)normalIcon
+               operationBlock:(void(^)())operationBlock; //*/
 @end
