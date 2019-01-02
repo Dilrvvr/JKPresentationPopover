@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50264B7B21DC681F000817FA /* JKPresentationPopoverConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 50264B7A21DC681F000817FA /* JKPresentationPopoverConfiguration.m */; };
+		50264B7E21DCA183000817FA /* JKPresentationPopoverConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 50264B7D21DCA183000817FA /* JKPresentationPopoverConst.m */; };
+		50264B8121DCA9BA000817FA /* JKPresentationPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50264B8021DCA9BA000817FA /* JKPresentationPopoverController.m */; };
 		5092AF411DF1932C00DE9010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF401DF1932C00DE9010 /* main.m */; };
 		5092AF441DF1932C00DE9010 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF431DF1932C00DE9010 /* AppDelegate.m */; };
 		5092AF471DF1932C00DE9010 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF461DF1932C00DE9010 /* ViewController.m */; };
@@ -16,12 +19,11 @@
 		5092AF5A1DF1932C00DE9010 /* JKPresentationPopoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF591DF1932C00DE9010 /* JKPresentationPopoverTests.m */; };
 		5092AF651DF1932C00DE9010 /* JKPresentationPopoverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF641DF1932C00DE9010 /* JKPresentationPopoverUITests.m */; };
 		5092AF801DF1934100DE9010 /* defaultBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5092AF731DF1934100DE9010 /* defaultBg@3x.png */; };
-		5092AF811DF1934100DE9010 /* JKMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF751DF1934100DE9010 /* JKMenuTableViewCell.m */; };
-		5092AF821DF1934100DE9010 /* JKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF771DF1934100DE9010 /* JKMenuViewController.m */; };
-		5092AF831DF1934100DE9010 /* JKPresentationPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF791DF1934100DE9010 /* JKPresentationPopoverController.m */; };
+		5092AF811DF1934100DE9010 /* JKPresentationPopoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF751DF1934100DE9010 /* JKPresentationPopoverCell.m */; };
+		5092AF821DF1934100DE9010 /* JKPresentationPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF771DF1934100DE9010 /* JKPresentationPopoverViewController.m */; };
 		5092AF841DF1934100DE9010 /* JKPresentationPopoverItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF7B1DF1934100DE9010 /* JKPresentationPopoverItem.m */; };
-		5092AF851DF1934100DE9010 /* JKPresentationPopoverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF7D1DF1934100DE9010 /* JKPresentationPopoverManager.m */; };
-		5092AF861DF1934100DE9010 /* JKPresentPopoverTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF7F1DF1934100DE9010 /* JKPresentPopoverTool.m */; };
+		5092AF851DF1934100DE9010 /* JKPresentationPopoverTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF7D1DF1934100DE9010 /* JKPresentationPopoverTransitionManager.m */; };
+		5092AF861DF1934100DE9010 /* JKPresentationPopoverTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AF7F1DF1934100DE9010 /* JKPresentationPopoverTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50264B7921DC681F000817FA /* JKPresentationPopoverConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverConfiguration.h; sourceTree = "<group>"; };
+		50264B7A21DC681F000817FA /* JKPresentationPopoverConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverConfiguration.m; sourceTree = "<group>"; };
+		50264B7C21DCA183000817FA /* JKPresentationPopoverConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverConst.h; sourceTree = "<group>"; };
+		50264B7D21DCA183000817FA /* JKPresentationPopoverConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverConst.m; sourceTree = "<group>"; };
+		50264B7F21DCA9BA000817FA /* JKPresentationPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverController.h; sourceTree = "<group>"; };
+		50264B8021DCA9BA000817FA /* JKPresentationPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverController.m; sourceTree = "<group>"; };
 		5092AF3C1DF1932C00DE9010 /* JKPresentationPopover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKPresentationPopover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5092AF401DF1932C00DE9010 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5092AF421DF1932C00DE9010 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,18 +67,16 @@
 		5092AF641DF1932C00DE9010 /* JKPresentationPopoverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverUITests.m; sourceTree = "<group>"; };
 		5092AF661DF1932C00DE9010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5092AF731DF1934100DE9010 /* defaultBg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaultBg@3x.png"; sourceTree = "<group>"; };
-		5092AF741DF1934100DE9010 /* JKMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMenuTableViewCell.h; sourceTree = "<group>"; };
-		5092AF751DF1934100DE9010 /* JKMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMenuTableViewCell.m; sourceTree = "<group>"; };
-		5092AF761DF1934100DE9010 /* JKMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKMenuViewController.h; sourceTree = "<group>"; };
-		5092AF771DF1934100DE9010 /* JKMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKMenuViewController.m; sourceTree = "<group>"; };
-		5092AF781DF1934100DE9010 /* JKPresentationPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverController.h; sourceTree = "<group>"; };
-		5092AF791DF1934100DE9010 /* JKPresentationPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverController.m; sourceTree = "<group>"; };
+		5092AF741DF1934100DE9010 /* JKPresentationPopoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverCell.h; sourceTree = "<group>"; };
+		5092AF751DF1934100DE9010 /* JKPresentationPopoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverCell.m; sourceTree = "<group>"; };
+		5092AF761DF1934100DE9010 /* JKPresentationPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverViewController.h; sourceTree = "<group>"; };
+		5092AF771DF1934100DE9010 /* JKPresentationPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverViewController.m; sourceTree = "<group>"; };
 		5092AF7A1DF1934100DE9010 /* JKPresentationPopoverItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverItem.h; sourceTree = "<group>"; };
 		5092AF7B1DF1934100DE9010 /* JKPresentationPopoverItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverItem.m; sourceTree = "<group>"; };
-		5092AF7C1DF1934100DE9010 /* JKPresentationPopoverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverManager.h; sourceTree = "<group>"; };
-		5092AF7D1DF1934100DE9010 /* JKPresentationPopoverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverManager.m; sourceTree = "<group>"; };
-		5092AF7E1DF1934100DE9010 /* JKPresentPopoverTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentPopoverTool.h; sourceTree = "<group>"; };
-		5092AF7F1DF1934100DE9010 /* JKPresentPopoverTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentPopoverTool.m; sourceTree = "<group>"; };
+		5092AF7C1DF1934100DE9010 /* JKPresentationPopoverTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverTransitionManager.h; sourceTree = "<group>"; };
+		5092AF7D1DF1934100DE9010 /* JKPresentationPopoverTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverTransitionManager.m; sourceTree = "<group>"; };
+		5092AF7E1DF1934100DE9010 /* JKPresentationPopoverTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPresentationPopoverTool.h; sourceTree = "<group>"; };
+		5092AF7F1DF1934100DE9010 /* JKPresentationPopoverTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPresentationPopoverTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,18 +171,22 @@
 			isa = PBXGroup;
 			children = (
 				5092AF731DF1934100DE9010 /* defaultBg@3x.png */,
-				5092AF741DF1934100DE9010 /* JKMenuTableViewCell.h */,
-				5092AF751DF1934100DE9010 /* JKMenuTableViewCell.m */,
-				5092AF761DF1934100DE9010 /* JKMenuViewController.h */,
-				5092AF771DF1934100DE9010 /* JKMenuViewController.m */,
-				5092AF781DF1934100DE9010 /* JKPresentationPopoverController.h */,
-				5092AF791DF1934100DE9010 /* JKPresentationPopoverController.m */,
+				5092AF741DF1934100DE9010 /* JKPresentationPopoverCell.h */,
+				5092AF751DF1934100DE9010 /* JKPresentationPopoverCell.m */,
+				50264B7921DC681F000817FA /* JKPresentationPopoverConfiguration.h */,
+				50264B7A21DC681F000817FA /* JKPresentationPopoverConfiguration.m */,
+				50264B7C21DCA183000817FA /* JKPresentationPopoverConst.h */,
+				50264B7D21DCA183000817FA /* JKPresentationPopoverConst.m */,
+				50264B7F21DCA9BA000817FA /* JKPresentationPopoverController.h */,
+				50264B8021DCA9BA000817FA /* JKPresentationPopoverController.m */,
 				5092AF7A1DF1934100DE9010 /* JKPresentationPopoverItem.h */,
 				5092AF7B1DF1934100DE9010 /* JKPresentationPopoverItem.m */,
-				5092AF7C1DF1934100DE9010 /* JKPresentationPopoverManager.h */,
-				5092AF7D1DF1934100DE9010 /* JKPresentationPopoverManager.m */,
-				5092AF7E1DF1934100DE9010 /* JKPresentPopoverTool.h */,
-				5092AF7F1DF1934100DE9010 /* JKPresentPopoverTool.m */,
+				5092AF7E1DF1934100DE9010 /* JKPresentationPopoverTool.h */,
+				5092AF7F1DF1934100DE9010 /* JKPresentationPopoverTool.m */,
+				5092AF7C1DF1934100DE9010 /* JKPresentationPopoverTransitionManager.h */,
+				5092AF7D1DF1934100DE9010 /* JKPresentationPopoverTransitionManager.m */,
+				5092AF761DF1934100DE9010 /* JKPresentationPopoverViewController.h */,
+				5092AF771DF1934100DE9010 /* JKPresentationPopoverViewController.m */,
 			);
 			path = JKPresentationPopover;
 			sourceTree = "<group>";
@@ -315,15 +325,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5092AF851DF1934100DE9010 /* JKPresentationPopoverManager.m in Sources */,
+				5092AF851DF1934100DE9010 /* JKPresentationPopoverTransitionManager.m in Sources */,
 				5092AF471DF1932C00DE9010 /* ViewController.m in Sources */,
-				5092AF811DF1934100DE9010 /* JKMenuTableViewCell.m in Sources */,
-				5092AF831DF1934100DE9010 /* JKPresentationPopoverController.m in Sources */,
+				5092AF811DF1934100DE9010 /* JKPresentationPopoverCell.m in Sources */,
 				5092AF841DF1934100DE9010 /* JKPresentationPopoverItem.m in Sources */,
+				50264B7B21DC681F000817FA /* JKPresentationPopoverConfiguration.m in Sources */,
 				5092AF441DF1932C00DE9010 /* AppDelegate.m in Sources */,
 				5092AF411DF1932C00DE9010 /* main.m in Sources */,
-				5092AF821DF1934100DE9010 /* JKMenuViewController.m in Sources */,
-				5092AF861DF1934100DE9010 /* JKPresentPopoverTool.m in Sources */,
+				5092AF821DF1934100DE9010 /* JKPresentationPopoverViewController.m in Sources */,
+				50264B8121DCA9BA000817FA /* JKPresentationPopoverController.m in Sources */,
+				5092AF861DF1934100DE9010 /* JKPresentationPopoverTool.m in Sources */,
+				50264B7E21DCA183000817FA /* JKPresentationPopoverConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

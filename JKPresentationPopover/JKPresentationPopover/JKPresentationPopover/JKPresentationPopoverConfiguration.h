@@ -1,40 +1,39 @@
 //
-//  JKPresentationPopoverItem.h
+//  JKPresentationPopoverConfiguration.h
 //  JKPresentationPopover
 //
-//  Created by albert on 16/12/1.
-//  Copyright © 2016年 albert. All rights reserved.
+//  Created by albert on 2019/1/2.
+//  Copyright © 2019 albert. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "JKPresentationPopoverConst.h"
 
-@class JKPresentationPopoverConfiguration;
+@interface JKPresentationPopoverConfiguration : NSObject
 
-@interface JKPresentationPopoverItem : NSObject
+/** itemArray */
+@property (nonatomic, strong, readonly) NSMutableArray *itemArray;
 
-/** icon */
-@property (nonatomic, copy) NSString *icon;
+/** presentFrame */
+@property (nonatomic, assign) CGRect presentFrame;
 
-/** highlightedIcon */
-@property (nonatomic, copy) NSString *highlightedIcon;
+/** 整个的背景图片 */
+@property (nonatomic, strong) UIImage *backgroundImage;
 
+/** tableViewBackgroundColor 默认nil */
+@property (nonatomic, strong) UIColor *tableViewBackgroundColor;
 
-/** iconImage */
-@property (nonatomic, strong) UIImage *iconImage;
+/** 是否允许滚动 默认不允许 */
+@property (nonatomic, assign) BOOL scrollEnabled;
 
-/** highlightedIconImage */
-@property (nonatomic, strong) UIImage *highlightedIconImage;
+/** 动画方向 默认从上到下 */
+@property (nonatomic, assign) JKPresentPopoverAnimationDirection animationDirection;
 
+/** 动画时长 默认0.25s */
+@property (nonatomic, assign) CGFloat animationDuration;
 
-/** title */
-@property (nonatomic, copy) NSString *title;
-
-/** attributedTitle */
-@property (nonatomic, copy) NSAttributedString *attributedTitle;
-
-
-/** 点击后的操作block */
-@property (nonatomic, copy) void (^operation)(JKPresentationPopoverItem *item);
+/** tableView的上下左右间距 全部为正数 写的是tableView的frame上下左右间距 */
+@property (nonatomic, assign) UIEdgeInsets tableViewInset;
 
 
 
@@ -52,8 +51,6 @@
 
 /** textAlignment */
 @property (nonatomic, assign) NSTextAlignment textAlignment;
-
-
 
 /** cell选中样式 默认default */
 @property (nonatomic, assign) UITableViewCellSelectionStyle selectionStyle;
@@ -76,15 +73,11 @@
 /** cell底部分隔线颜色 默认浅灰色 */
 @property (nonatomic, strong) UIColor *cellBottomSeparatorLineColor;
 
-/** cell底部分隔线左边距 默认0 */
-@property (nonatomic, assign) CGFloat cellBottomSeparatorLineLeftMargin;
-
 /** cell底部分隔线 左右下 间距 默认0 */
 @property (nonatomic, assign) UIEdgeInsets cellBottomSeparatorLineInset;
 
-+ (void)itemWithIcon:(NSString *)icon
-               title:(NSString *)title
-       configuration:(JKPresentationPopoverConfiguration *)configuration
-          itemConfig:(void(^)(JKPresentationPopoverItem *item))itemConfig
-           operation:(void(^)(JKPresentationPopoverItem *item))operation;
+
++ (void)configurationWithTitleFont:(UIFont *)titleFont
+                        titleColor:(UIColor *)titleColor
+                     configuration:(void(^)(JKPresentationPopoverConfiguration *configuration))configuration;
 @end

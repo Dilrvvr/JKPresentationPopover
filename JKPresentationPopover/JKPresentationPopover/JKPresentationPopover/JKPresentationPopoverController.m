@@ -9,6 +9,7 @@
 #import "JKPresentationPopoverController.h"
 
 @interface JKPresentationPopoverController ()
+
 /** dismissButton */
 @property (nonatomic, weak) UIButton *dismissButton;
 @end
@@ -46,6 +47,7 @@
 }
 
 - (void)dismissButtonClick{
+    
     [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
 }
 @end
