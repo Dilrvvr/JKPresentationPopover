@@ -16,7 +16,7 @@
 
 @implementation JKPresentationPopoverConfiguration
 
-+ (void)configurationWithTitleFont:(UIFont *)titleFont
++ (instancetype)configurationWithTitleFont:(UIFont *)titleFont
                         titleColor:(UIColor *)titleColor
                      configuration:(void(^)(JKPresentationPopoverConfiguration *configuration))configuration{
     
@@ -26,6 +26,8 @@
     config.titleColor = titleColor;
     
     !configuration ? : configuration(config);
+    
+    return config;
 }
 
 - (instancetype)init{

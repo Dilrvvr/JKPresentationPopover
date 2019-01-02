@@ -77,7 +77,7 @@
 @property (nonatomic, assign) UIEdgeInsets cellBottomSeparatorLineInset;
 
 
-+ (void)configurationWithTitleFont:(UIFont *)titleFont
++ (instancetype)configurationWithTitleFont:(UIFont *)titleFont
                         titleColor:(UIColor *)titleColor
                      configuration:(void(^)(JKPresentationPopoverConfiguration *configuration))configuration;
 @end

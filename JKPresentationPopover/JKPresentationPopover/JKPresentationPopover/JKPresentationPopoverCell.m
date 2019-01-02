@@ -105,6 +105,11 @@
     [super layoutSubviews];
     
     self.bottomSepLineView.frame = CGRectMake(self.popoverItem.cellBottomSeparatorLineInset.left, self.frame.size.height - 0.5 - self.popoverItem.cellBottomSeparatorLineInset.bottom, self.frame.size.width - self.popoverItem.cellBottomSeparatorLineInset.left - self.popoverItem.cellBottomSeparatorLineInset.right, 0.5);
+    
+    if (!self.imageView.image) {
+        
+        self.textLabel.frame = self.contentView.bounds;
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
