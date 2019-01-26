@@ -78,6 +78,6 @@
 
 
 + (instancetype)configurationWithTitleFont:(UIFont *)titleFont
-                        titleColor:(UIColor *)titleColor
-                     configuration:(void(^)(JKPresentationPopoverConfiguration *configuration))configuration;
+                                titleColor:(UIColor *)titleColor
+                             configuration:(void(^)(JKPresentationPopoverConfiguration *configuration))configuration;
 @end

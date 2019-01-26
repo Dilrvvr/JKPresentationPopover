@@ -21,7 +21,7 @@
  * viewController  : 由那个控制器present出来，不传则默认根控制器
  * didPresentBlock : 监听present和dismiss的block，需要据此改变自身控件状态的可以使用
  */
-+ (void)showWithConfiguration:(JKPresentationPopoverConfiguration * (^)(void))configuration
++ (void)showWithConfiguration:(void (^)(JKPresentationPopoverConfiguration *configuration))configuration
                viewController:(UIViewController *)viewController
               didPresentBlock:(void(^)(BOOL isPresent))didPresentBlock;
 @end
