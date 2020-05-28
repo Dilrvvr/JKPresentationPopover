@@ -1,7 +1,7 @@
 # JKPresentationPopover
 自定义present动画实现popover
 ***
-![image](https://github.com/Jacky-An/JKPresentationPopover/raw/master/introductionimages/JKPresentationPopover.gif)
+![image](https://github.com/Dilrvvr/JKPresentationPopover/raw/master/introductionimages/JKPresentationPopover.gif)
 ***
 
     // 导入头文件
